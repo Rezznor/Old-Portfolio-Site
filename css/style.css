@@ -1,0 +1,512 @@
+/*--------------------------------------------*/
+/*		
+	Theme: Josh Jacob Portfolio;
+	Description: One Page Responsive Template;
+	Version: 1.0;
+	Author: Josh Jacob;
+	Website: http://joshuajacb.com
+*/
+
+/*--------------------------------------------*/
+/*				Table Of Contents
+/*--------------------------------------------*/
+/* 	01 - Global
+/* 	02 - Nav
+/* 	03 - Header
+/* 	04 - About
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/* 				01 - Global Style
+/*--------------------------------------------*/
+ html,
+ body {
+ 
+  width: 100%;
+  height: 100%;
+ 
+ }
+
+body {
+
+  font-family: Oswald, Helvetica, Arial, sans-serif;
+
+}
+
+hr {
+
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+
+}
+
+hr.light {
+
+  border-color: #fff;
+
+}
+
+a {
+
+  color: #f05f40;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+a:hover,
+a:focus {
+  
+  color: #eb3812;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+}
+
+p {
+
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+.text-faded {
+
+  color: rgba(255,255, 255, 0.7);
+
+}
+
+.bg-primary {
+
+  background-color: #003876;
+
+}
+
+.def-btn {
+
+  display: inline-block;
+  padding: 14px 28px 13px 28px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 11px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+
+}
+/*--------------------------------------------*/
+/*        02 - Nav Style
+/*--------------------------------------------*/
+.navbar-default {
+
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border-color: transparent;
+
+}
+
+.navbar-default .navbar-header .navbar-brand {
+
+  color: #ffffff;
+  padding: 0px;
+  line-height: 0px;
+  height: 40px;
+  padding: 30px 20px;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+
+  color: #eb3812
+
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 30px 20px;
+  font-family: "Oswald", helvetica, sans-serif;
+  letter-spacing: 1px;
+
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+
+  color: #f05f40;
+
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+  
+  color: #f05f40!important;
+  background-color: transparent;
+
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+
+  background-color: transparent;
+
+}
+
+.navbar-default.scroll-fixed-navbar {
+
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  color: #333333;
+
+}
+.navbar-default.scroll-fixed-navbar .navbar-nav li a {
+ 
+  color: #333333;
+  padding: 30px 20px;
+
+}
+
+.navbar-defauly.scroll-fixed-navbar .navbar-brand {
+  color: #000000;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+    }
+    .navbar-defauly.scroll-fixed-navbar .navbar-brand {
+      color: #000000;
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .navbar-default.affix {
+
+        background-color: #fff;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #f05f40;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #eb3812;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #f05f40;
+    }
+}
+/*--------------------------------------------*/
+/*        03 - Header
+/*--------------------------------------------*/
+header {
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: table;
+  z-index: 1;
+  background: transparent;
+}
+
+header .overlay {
+
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: url("../img/noise.png");
+
+}
+
+header .header-content {
+ 
+  position: relative;
+  z-index: 2;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+
+}
+
+header .header-content .title {
+
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  height: 60px;
+
+}
+
+header .header-content .title h1 {
+
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  margin-top: 0px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  display: inline-block;
+
+}
+
+header .header-content .subtitle {
+
+  text-align: center;
+  margin: 0 auto;
+  font-size: 24px;
+  margin-top: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 15px;
+
+}
+
+header .header-content .subtitle p {
+
+  margin: 0px;
+  font-size: 18px;
+  line-height: 18px;
+
+}
+
+header .header-content .typed-cursor {
+
+  font-size: 24px;
+  font-size: 40px;
+  font-weight: 300;
+  visibility: hidden;
+
+}
+
+header .scroll-info {
+
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+  width: 100%;
+
+}
+
+header .scroll-info .shape {
+
+  display: inline-block;
+  border: 1px solid #ffffff;
+  width: 35px;
+  height: 35px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+
+}
+
+header .scroll-info .shape i {
+
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  padding: 8px;
+  font-size: 18px;
+  color: #ffffff;
+
+}
+
+header .scroll-info .shape .fa-angle-down {
+
+  -webkit-animation-name: drop;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-name: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+
+}
+
+header .header-content .buttons {
+
+  display: inline-block;
+  margin-top: 20px;
+
+}
+
+header .header-content .buttons .def-btn {
+
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  margin-right: 15px;
+  font-weight: 700;
+  border: 0px;
+  padding: 10px 5px;
+
+}
+/*--------------------------------------------*/
+/*        04 - About Section
+/*--------------------------------------------*/
+#about .container {
+
+  padding: 80px 0px;
+
+}
+
+.counter {
+
+  background-size: cover;
+  position: relative;
+  text-align: center;
+
+}
+
+.counter .overlay {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url("../img/noise2.png");
+
+}
+
+.counter .content {
+
+  padding-bottom: 50px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 2;
+
+}
+
+.counter .icon {
+
+  display: inline-block;
+  border: 1px solid #ffffff;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 30px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  text-align: center;
+
+}
+
+.counter i {
+
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  font-size: 35px;
+  margin: 10px;
+  color: #ffffff;
+
+}
+
+.counter h3 {
+
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-seif;
+
+}
+
+.counter h4 {
+
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
